@@ -1,0 +1,65 @@
+// _mixings.scss
+
+
+
+
+
+
+/* Mixings */
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 14) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+
+@mixin border-radius($sizeValue: 1) {
+  -webkit-border-radius: $sizeValue * 1rem;
+     -moz-border-radius: $sizeValue * 1rem;
+      -ms-border-radius: $sizeValue * 1rem;
+          border-radius: $sizeValue * 1rem;
+}
+
+ 
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin transition($in) {
+  transition:$in;
+  -webkit-transition:$in;
+  -moz-transition:$in;
+  -o-transition:$in;
+  -ms-transition:$in;
+}
+@mixin transform($in) {
+  transform:$in;
+  -webkit-transform:$in;
+  -moz-transform:$in;
+  -o-transform:$in;
+  -ms-transform:$in;
+}
+
+
+@mixin animation($in) {
+  animation:$in;
+  -webkit-animation:$in;
+  -moz-animation:$in;
+  -o-animation:$in;
+  -ms-animation:$in;
+}
+
+@mixin clip-path($clip) {
+  -webkit-clip-path: $clip;
+  -moz-clip-path: $clip;
+  -ms-clip-path: $clip;
+  clip-path: $clip;
+}
+
+

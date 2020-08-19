@@ -1,0 +1,99 @@
+// _extend.scss
+
+
+
+
+
+
+/* extend */
+
+  .btn{
+    @include transition(all 0.3s ease);
+    background-color:$BE__color__background-button;
+    border-color:$BE__color__background-button;
+    border-width:2px;
+    border-style:solid;
+    color: $BE__color__white-text;
+    text-transform:uppercase;
+    @include border-radius(0);
+
+     &:visited{
+    color: $BE__color__white-text;
+    }
+
+
+    &:hover{
+    background-color:transparent;
+    color: $BE__color__link;
+
+
+
+    }
+   
+    }
+
+
+.cta-btn-border {
+ 
+  color: $BE__color__white-text;
+ 
+
+    &:hover{
+    background-color:$BE__color__background-button;
+    border-color:$BE__color__background-button;
+    color: $BE__color__white-text;
+    }
+
+ 
+}
+
+.secondary-btn{
+  background-color:$BE__color__background-light-blue;
+  border-color:$BE__color__background-light-blue;
+  
+  &:hover{
+    background-color:transparent;
+    border-color:$BE__color__background-light-blue;
+    color: $BE__color__background-light-blue;
+
+  }
+}
+
+.heading3{
+  color:$BE__color__heading;
+}
+
+.box-hover-effect{
+  @include box-shadow(0, 0px, 20px, rgba(166, 166, 166, 0.25));
+  background-color:$BE__color__background-body;
+  padding:3rem;
+
+
+}
+
+.fontawesome-icon{
+  font-family: $BE__font__code__ico;
+   font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    
+}
+
+.rating{   @include font-size(.8);
+      span{ &:before{
+        color:$BE__color__background-dark-blue;
+      }}
+
+      }
+
+   span.onsale{position: absolute; background-color: $BE__color__background-dark-blue;    padding: 0.3rem 1rem;
+    top: 14px;
+    left: 0px;
+    color: $BE__color__white-text;
+    font-weight: bold;
+    z-index: 9; width: 60px}
+
+  
+
+    

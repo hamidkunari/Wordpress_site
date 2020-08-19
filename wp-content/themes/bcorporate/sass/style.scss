@@ -1,0 +1,113 @@
+/*!
+Theme Name: Bcorporate
+Theme URI: https://blazethemes.com/themes/bcorporate
+Author: Blaze Themes
+Author URI: https://blazethemes.com/
+Description: BCorporate is a Free Corporate Wordpress Theme created using latest trends such as SASS which is a powerful and well performed CSS Extension, with HTML5 / CSS3 and Responsive design. This theme is a Full-Width Layout with includes features and Sections such as: Sliders, Portfolios, Services, Testimonials, Blog Posts, Call To Action (x2) and Contact Form. 
+BCorporate is suitable for any kind of businesses, with WooCommerce integrated in the theme BCorporate can serve all ecommerce related companies, corporate services & many other industries. It is created with more simplistic clean codes with easy to customize blogs, news and article publishing. Easy to navigate through its articles, it has clean Comment and Social Share features.  
+This theme is built on Bootstrap which makes it highly responsive and all browsers compatible. It is tested and supported by all screen-size. A cutting-edge mobile friendly performance, its SEO Friendly nature and beautifully integrated social shares will boost your online presence and help your website reach the top search results.
+Version: 3.0.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bcorporate
+Tags: left-sidebar, custom-background, custom-logo, portfolio, blog, education, left-sidebar, grid-layout, custom-colors, custom-menu, featured-images, footer-widgets, theme-options, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Bcorporate is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "bcorporate-custom/custom";

@@ -1,0 +1,199 @@
+// _base.scss
+
+
+
+
+
+
+/* base */
+:root {
+font-size: 15px;
+}
+
+
+body{
+  font-family:
+  $BE__font__code;
+ 
+  color:$BE__color__text-main;
+  line-height:1.7;
+  
+
+  }
+
+  body, button, input, select, optgroup, textarea{font-family:
+  $BE__font__code;}
+
+ a, a:visited{color:$BE__color__link;  @include transition(all 0.5s ease);} 
+a, a:hover{text-decoration:none; }
+a:active,
+a:hover {
+  color: $BE__color__link-hover;
+}
+
+a:focus{
+  outline:none;
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight:bold; color:$BE__color__heading; line-height:1.5}
+.site-title a{color:$BE__color__text-screen;
+&:hover{color:$BE__color__link-hover;}
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select{  
+  @include border-radius(0); 
+  border-color:$BE__color__border-input;
+  padding:0.8rem .5rem; }
+section{
+  margin:3rem 0;
+  
+  @media (min-width: 768px) {
+    
+      margin:4rem 0
+    }
+  @media (min-width: 1024px) {
+    
+      margin:5rem 0
+    }
+
+  }
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover{background-color:transparent;}
+
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus{border:none; outline:0}
+
+button, input[type="button"], input[type="reset"], input[type="submit"]{ @extend .cta-btn-border;
+    @include font-size(1);
+    width:138px;
+    background-color:$BE__color__background-light-blue;
+    border-color:$BE__color__background-light-blue;
+    padding:.5rem;
+    line-height:1.5;
+      @include border-radius(0); }
+ 
+
+  ul,ol{margin: 1rem 0 1.5em 0em;}
+
+  label{
+    font-weight:bold; 
+    color:$BE__color__heading;
+
+    span.required{
+      color:$BE__color__important;
+    }
+  }
+table td, table th {
+    padding: 1em 1.41575em;
+    text-align: left;
+    vertical-align: top;
+    }
+ table th{background-color:$BE__color__background-screen;}
+ table thead th{padding: 1.41575em;
+    vertical-align: middle;}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+     margin-bottom: .5rem; }
+h1{
+  @include font-size(1.5);
+
+  @media (min-width: 576px) {
+  
+    @include font-size(2);
+  }
+
+  @media (min-width:  736px) {
+  
+    @include font-size(2.4);
+  }
+}
+
+h2{
+  @include font-size(1.4);
+
+  @media (min-width: 576px) {
+  
+    @include font-size(1.8)
+  }
+
+  @media (min-width:  736px) {
+  
+    @include font-size(2)
+  }
+}
+
+h3{
+  @include font-size(1.1);
+
+  @media (min-width: 576px) {
+  
+    @include font-size(1.2)
+  }
+
+  @media (min-width: 736px) {
+  
+    @include font-size(1.5)
+  } 
+}
+
+h4{
+  @include font-size(1.2);
+
+  @media (min-width: 576px) {
+  
+    @include font-size(1.4)
+  }
+
+  @media (min-width: 736px) {
+  
+    @include font-size(1.2)
+  } 
+}
+
+
+h5{
+  @include font-size(1.1);
+
+  @media (min-width: 576px) {
+  
+    @include font-size(1.2)
+  }
+
+  @media (min-width: 736px) {
+  
+    @include font-size(.8)
+  }
+}
+
+h6{
+  @include font-size(1.0);
+
+  @media (min-width: 576px) {
+  
+    @include font-size(1.0)
+  }
+
+  @media (min-width: 736px) {
+  
+    @include font-size(.4)
+  }
+
+}
+
+blockquote{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: $BE__color__background-screen;
+  border-left: 4px solid $BE__color__border-blockquoute;
+  color: $BE__color__text-main;
+  font-style: italic;
+}
+
+blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child{
+    margin-bottom:0
+}
+
+.wdnoscroll{
+  position:fixed;
+  width:100%;
+  left:0;
+  top:0}
